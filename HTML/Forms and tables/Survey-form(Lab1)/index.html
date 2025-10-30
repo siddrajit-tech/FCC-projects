@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Portfolio survey</h1>
+      <p id="description">
+        Thanks for taking the time to review my portfolio. Any feedback is
+        greatly appreciated and will be taken into consideration.
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <fieldset id="personal-details">
+          <legend>Personal Details</legend>
+          <label for="name" id="name-label">Name: </label>
+          <input required type="text" id="name" placeholder="Enter your name"><br>
+          <label for="email" id="email-label">Email: </label>
+          <input required type="email" id="email" placeholder="Enter your email"><br>
+          <label for="age" id="number-label">Age: </label>
+          <input type="number" id="number" max="100" min="15" placeholder="Enter your age">
+        </fieldset>
+        <fieldset id="fav-project">
+          <legend>Favourite Project</legend>
+          <input type="radio" id="e-commerce-app" value="e-commerce-app" name="project-selection">
+          <label for="e-commerce-app">E-commerce App with MERN stack and next.js</label><br>
+          <input type="radio" id="spring-rest-api" value="spring-rest-api" name="project-selection">
+          <label for="spring-rest-api">Spring REST API for a library management system</label><br>
+          <input type="radio" id="banking-system" value="banking-system" name="project-selection">
+          <label for="banking-system">Banking system with java backend</label><br>
+          <input type="radio" id="study-helper" value="study-helper" name="project-selection">
+          <label for="study-helper">StudyBuddy - A study helper</label>
+        </fieldset>
+        <fieldset id="improvements">
+          <legend>Improvements to projects</legend>
+          <input type="checkbox" id="e-commerce-app-check" value="e-commerce-app" name="project-selection">
+          <label for="e-commerce-app-check">E-commerce App with MERN stack and next.js</label><br>
+          <input type="checkbox" id="spring-rest-api-check" value="spring-rest-api" name="project-selection">
+          <label for="spring-rest-api-check">Spring REST API for a library management system</label><br>
+          <input type="checkbox" id="banking-system-check" value="banking-system" name="project-selection">
+          <label for="banking-system-check">Banking system with java backend</label><br>
+          <input type="checkbox" id="study-helper-check" value="study-helper" name="project-selection">
+          <label for="study-helper-check">JavaScript mini projects</label><br>
+          <input type="checkbox" id="js-mini-projects-check" name="project-selection" value="js-mini-projects-check">
+          <label for="study-helper-check">Java mini projects</label><br>
+          <input type="checkbox" id="ml-datascience" name="project-selection" value="ml-datascience">
+          <label for="study-helper-check">Python AI/ML and Data Science projects</label><br>
+          <input type="checkbox" id="other" name="project-selection" value="other">
+          <label for="other">Other-Check GitHub for more projects</label>
+        </fieldset>
+        <fieldset id="rating">
+          <legend>Ratings</legend>
+          <label for="dropdown">Rate my projects: </label>
+          <select name="dropdown" id="dropdown" >
+            <option value="unsatisfactory">Unsatisfactory</option>
+            <option value="below-expectations">Below expectations</option>
+            <option value="decent">Decent</option>
+            <option value="above-average">Above average</option>
+            <option value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+        <fieldset id="comments-section">
+          <legend>Comments</legend>
+          <label for="comments">Any other feedback for my work: </label>
+          <textarea name="comments" id="comments">Comments go here</textarea>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

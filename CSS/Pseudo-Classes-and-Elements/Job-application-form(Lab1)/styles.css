@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(45deg, rgb(255, 55, 0), rgb(255, 107, 43));
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+  background-color: aliceblue;
+  margin: 50px auto;
+  max-width: 70%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container input,
+.container select,
+.container textarea{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 8px;
+  width: 100%;
+}
+
+.container label{
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.radio-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.radio-group input[type="radio"] {
+  width: auto;
+  margin: 5px ;
+  font-weight: normal;
+}
+
+.radio-group label {
+  display: inline;
+  margin: 0 20px 0 0;
+  font-weight: normal;
+}
+
+.container button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+input:focus, textarea:focus{
+    border-color: black;
+}
+
+input:invalid , select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid ,select:valid, textarea:valid{
+    border-color: green;
+}
+
+button:hover{
+    background-color: #ff1e00;
+}
+
+
+
+input:first-of-type{
+    border-radius: 15px;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: orangered;
+
+}
+
+.radio-group input[type="radio"]:checked{
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+    background-color: orangered;
+}
