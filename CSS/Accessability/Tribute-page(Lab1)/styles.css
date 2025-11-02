@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  width: 90%;
+  background-color: rgb(203, 201, 201);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px 10px;
+  margin: auto;
+}
+
+
+
+#img-div{
+  width: 95%;
+  background-color: white;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+#image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  align-self: center;
+  margin: 10px auto;
+}
+
+#tribute-info h3{
+  margin: 35px auto;
+
+}
+
+#tribute-info ul{
+  text-align: left;
+  margin: auto 100px
+}
+
+#tribute-info li{
+  margin: 10px auto;
+}
